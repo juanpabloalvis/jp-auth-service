@@ -1,0 +1,24 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: jp-auth-service
+jwt:
+  secret: jp-secretjp-secretjp-secretjp-secretjp-secretjp-secretjp-secretjp-secret
+
+logging.pattern.level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+management:
+  tracing:
+    sampling:
+      #      used for tracing
+      probability: 1.0
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'

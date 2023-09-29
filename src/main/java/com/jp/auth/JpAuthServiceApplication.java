@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JpAuthServiceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(JpAuthServiceApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(JpAuthServiceApplication.class, args);
+    }
 
 }
